@@ -7,13 +7,20 @@
 //
 
 #import "RAAppDelegate.h"
+#import "RAViewController.h"
 
 @implementation RAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    RAViewController *viewController = [RAViewController new];
+    UINavigationController *navContoller = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = navContoller;
+    
+    
+   
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
