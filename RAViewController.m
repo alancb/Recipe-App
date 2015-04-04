@@ -8,7 +8,11 @@
 
 #import "RAViewController.h"
 
-@interface RAViewController ()
+#import "RecipesTableVIewDataSource.h"
+
+@interface RAViewController () <UITableViewDelegate>
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) RecipesTableVIewDataSource *dataSource;
 
 @end
 
@@ -16,12 +20,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+//    [self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewCellStyleDefault];
+    self.tableView.frame = self.tableView.bounds;
+    
+    [self.view addSubview:self.tableView];
+    
+    self.title = @"All-Time Best Recipes";
+    self.dataSource = [RecipesTableVIewDataSource new];
+    
+    self.tableView.dataSource = self.dataSource;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
 
 /*
