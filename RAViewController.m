@@ -7,12 +7,13 @@
 //
 
 #import "RAViewController.h"
-
 #import "RecipesTableVIewDataSource.h"
+#import "RecipeDetailViewController.h"
 
 @interface RAViewController () <UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) RecipesTableVIewDataSource *dataSource;
+@property (nonatomic, strong) RecipeDetailViewController *viewController;
 
 @end
 
@@ -21,7 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-//    [self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewCellStyleDefault];
     self.tableView.frame = self.tableView.bounds;
     
     [self.view addSubview:self.tableView];
@@ -30,17 +30,38 @@
     self.dataSource = [RecipesTableVIewDataSource new];
     
     self.tableView.dataSource = self.dataSource;
-    
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.tableView.delegate = self;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    self.viewController = [RecipeDetailViewController new];
+    [self.navigationController pushViewController:self.viewController animated:YES];
+    
+    self.viewController.indexForRecipe = indexPath.row;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 /*

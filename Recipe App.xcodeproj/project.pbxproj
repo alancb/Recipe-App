@@ -10,6 +10,7 @@
 		2CBD64241ACE31EC00AD7ED6 /* RAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD64231ACE31EC00AD7ED6 /* RAViewController.m */; };
 		2CBD64271ACE35B100AD7ED6 /* RARecipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD64261ACE35B100AD7ED6 /* RARecipes.m */; };
 		2CBD642A1ACE396300AD7ED6 /* RecipesTableVIewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD64291ACE396300AD7ED6 /* RecipesTableVIewDataSource.m */; };
+		2CBD64331AD06B7000AD7ED6 /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD64321AD06B7000AD7ED6 /* RecipeDetailViewController.m */; };
 		71F67B51192C8D6A00E609F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B50192C8D6A00E609F1 /* Foundation.framework */; };
 		71F67B53192C8D6A00E609F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B52192C8D6A00E609F1 /* CoreGraphics.framework */; };
 		71F67B55192C8D6A00E609F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B54192C8D6A00E609F1 /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 		2CBD64261ACE35B100AD7ED6 /* RARecipes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RARecipes.m; sourceTree = "<group>"; };
 		2CBD64281ACE396300AD7ED6 /* RecipesTableVIewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipesTableVIewDataSource.h; sourceTree = "<group>"; };
 		2CBD64291ACE396300AD7ED6 /* RecipesTableVIewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipesTableVIewDataSource.m; sourceTree = "<group>"; };
+		2CBD64311AD06B7000AD7ED6 /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
+		2CBD64321AD06B7000AD7ED6 /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
 		71F67B4D192C8D6A00E609F1 /* Recipe App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F67B50192C8D6A00E609F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71F67B52192C8D6A00E609F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,12 +121,14 @@
 			children = (
 				71F67B5F192C8D6A00E609F1 /* RAAppDelegate.h */,
 				71F67B60192C8D6A00E609F1 /* RAAppDelegate.m */,
-				2CBD64221ACE31EC00AD7ED6 /* RAViewController.h */,
-				2CBD64231ACE31EC00AD7ED6 /* RAViewController.m */,
 				2CBD64251ACE35B100AD7ED6 /* RARecipes.h */,
 				2CBD64261ACE35B100AD7ED6 /* RARecipes.m */,
+				2CBD64221ACE31EC00AD7ED6 /* RAViewController.h */,
+				2CBD64231ACE31EC00AD7ED6 /* RAViewController.m */,
 				2CBD64281ACE396300AD7ED6 /* RecipesTableVIewDataSource.h */,
 				2CBD64291ACE396300AD7ED6 /* RecipesTableVIewDataSource.m */,
+				2CBD64311AD06B7000AD7ED6 /* RecipeDetailViewController.h */,
+				2CBD64321AD06B7000AD7ED6 /* RecipeDetailViewController.m */,
 				71F67B62192C8D6A00E609F1 /* Images.xcassets */,
 				71F67B57192C8D6A00E609F1 /* Supporting Files */,
 			);
@@ -256,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CBD642A1ACE396300AD7ED6 /* RecipesTableVIewDataSource.m in Sources */,
+				2CBD64331AD06B7000AD7ED6 /* RecipeDetailViewController.m in Sources */,
 				2CBD64271ACE35B100AD7ED6 /* RARecipes.m in Sources */,
 				71F67B5D192C8D6A00E609F1 /* main.m in Sources */,
 				71F67B61192C8D6A00E609F1 /* RAAppDelegate.m in Sources */,
